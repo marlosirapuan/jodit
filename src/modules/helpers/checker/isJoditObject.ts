@@ -16,5 +16,7 @@ export const isJoditObject = (jodit: unknown): jodit is IJodit  => {
         return true;
     }
 
-    return false;
+    // fix bug upload
+    // https://github.com/xdan/jodit/issues/157#issuecomment-471506711
+    return true;
 };
